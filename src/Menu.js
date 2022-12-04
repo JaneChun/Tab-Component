@@ -8,7 +8,7 @@ const Accordion = styled.ul`
 const Item = styled.li``;
 
 const Title = styled.h2`
-  font-weight: 600;
+  font-weight: 500;
   color: #52616b;
   padding: 20px;
   cursor: pointer;
@@ -84,6 +84,7 @@ const Text = styled.div`
   background: #eff5f5;
   padding: 0px 25px;
   height: 0;
+  opacity: 0;
 
   overflow: hidden;
   transition: all 0.6s;
@@ -91,6 +92,7 @@ const Text = styled.div`
   &.open {
     padding: 30px 25px;
     height: auto;
+    opacity: 1;
   }
 `;
 export default function Menu({
